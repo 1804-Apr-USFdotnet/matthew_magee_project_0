@@ -9,9 +9,9 @@ namespace Data.Models
     public class Review
     {
         public int Id { get; set; }
-        public Restaurant Restaurants { get; set; }
-        public User Users { get; set; }
+        public int RestaurantId { get; set; }
         public string ReviewMessage { get; set; }
         public float Rating { get; set; }
+        public string Username { get; set; }
     }
 }

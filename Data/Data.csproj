@@ -74,6 +74,22 @@
     <Compile Include="Migrations\201804201553593_PopulateReviewsData.Designer.cs">
       <DependentUpon>201804201553593_PopulateReviewsData.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804211515384_UpdatedInitialModel.cs" />
+    <Compile Include="Migrations\201804211515384_UpdatedInitialModel.Designer.cs">
+      <DependentUpon>201804211515384_UpdatedInitialModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804211519023_UpdateReviewsData.cs" />
+    <Compile Include="Migrations\201804211519023_UpdateReviewsData.Designer.cs">
+      <DependentUpon>201804211519023_UpdateReviewsData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804211915583_UpdatedReviewModel.cs" />
+    <Compile Include="Migrations\201804211915583_UpdatedReviewModel.Designer.cs">
+      <DependentUpon>201804211915583_UpdatedReviewModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804211937114_PopulateRestaurantIdDataInReviews.cs" />
+    <Compile Include="Migrations\201804211937114_PopulateRestaurantIdDataInReviews.Designer.cs">
+      <DependentUpon>201804211937114_PopulateRestaurantIdDataInReviews.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Restaurant.cs" />
     <Compile Include="Models\Review.cs" />
@@ -97,6 +113,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804201553593_PopulateReviewsData.resx">
       <DependentUpon>201804201553593_PopulateReviewsData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804211515384_UpdatedInitialModel.resx">
+      <DependentUpon>201804211515384_UpdatedInitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804211519023_UpdateReviewsData.resx">
+      <DependentUpon>201804211519023_UpdateReviewsData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804211915583_UpdatedReviewModel.resx">
+      <DependentUpon>201804211915583_UpdatedReviewModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804211937114_PopulateRestaurantIdDataInReviews.resx">
+      <DependentUpon>201804211937114_PopulateRestaurantIdDataInReviews.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
