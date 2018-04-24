@@ -1,0 +1,398 @@
+﻿[
+  {
+    "restaurant": {
+      "name": "McDonalds",
+      "location": "123 main street",
+      "state": "AK",
+      "zipCode": 32452,
+      "phoneNumber": "907-322-2421",
+      "ratings": [
+        8.5,
+        6.5,
+        3.4,
+        5.9,
+        9.8,
+        2.4
+      ],
+      "reviews": [
+        {
+          "username": "johnboy3423",
+          "review": "I really hated this place.  Everything smells bad"
+        },
+        {
+          "username": "whateverDude45",
+          "review": "It was ok I guess."
+        },
+        {
+          "username": "funTimes123",
+          "review": "been coming here since I was a kid.  Always love it."
+        }
+      ]
+    }
+  },
+  {
+    "restaurant": {
+      "name": "Burger King",
+      "location": "3242 Squire Drive",
+      "state": "CO",
+      "zipCode": 32132,
+      "phoneNumber": "654-324-3242",
+      "ratings": [
+        5.4,
+        3.9,
+        3.8,
+        8.9
+      ],
+      "reviews": [
+        {
+          "username": "aitzhaki0",
+          "review": "Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices."
+        },
+        {
+          "username": "dnoad1",
+          "review": "Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh. In quis justo. Maecenas rhoncus aliquam lacus."
+        }
+      ]
+    }
+  },
+  {
+    "restaurant": {
+      "name": "Wendy's",
+      "location": "4223 Fletcher Lane",
+      "state": "TX",
+      "zipCode": 76544,
+      "phoneNumber": "719-324-6789",
+      "ratings": [
+        9.2,
+        4.5,
+        8.7,
+        6.8,
+        2.8,
+        9.7
+      ],
+      "reviews": [
+        {
+          "username": "bpetrovykh2",
+          "review": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est."
+        },
+        {
+          "username": "gvasin3",
+          "review": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui. Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam."
+        },
+        {
+          "username": "clamburne4",
+          "review": "Maecenas ut massa quis augue luctus tincidunt."
+        },
+        {
+          "username": "mhubatsch5",
+          "review": "Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum. Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue."
+        }
+      ]
+    }
+  },
+  {
+    "restaurant": {
+      "name": "Whataburger",
+      "location": "478 Enchilada Way",
+      "state": "TX",
+      "zipCode": 76544,
+      "phoneNumber": "254-534-4324",
+      "ratings": [
+        4.5,
+        7.8,
+        9.6,
+        4.6,
+        9.1,
+        7.9
+      ],
+      "reviews": [
+        {
+          "username": "lopenshaw2f",
+          "review": "In eleifend quam a odio. In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat. Curabitur gravida nisi at nibh. In hac habitasse platea dictumst."
+        },
+        {
+          "username": "bmaccorkell2g",
+          "review": "Curabitur convallis. Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh."
+        },
+        {
+          "username": "rbartolomeazzi2h",
+          "review": "Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti. Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris. Morbi non lectus."
+        },
+        {
+          "username": "berington2i",
+          "review": "Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim."
+        }
+      ]
+    }
+  },
+  {
+    "restaurant": {
+      "name": "In n Out",
+      "location": "345 Burger Street",
+      "state": "CA",
+      "zipCode": 92123,
+      "phoneNumber": "618-453-7865",
+      "ratings": [
+        7.8,
+        5.6,
+        7.9,
+        8.1,
+        3.8,
+        9.9,
+        10,
+        1.4
+      ],
+      "reviews": [
+        {
+          "username": "drickwood2k",
+          "review": "Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh. In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet. Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo."
+        },
+        {
+          "username": "dsentance2l",
+          "review": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus. In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti. In eleifend quam a odio."
+        },
+        {
+          "username": "mpechan2m",
+          "review": "Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus. In sagittis dui vel nisl. Duis ac nibh."
+        },
+        {
+          "username": "kchivers2n",
+          "review": "In congue. Etiam justo. Etiam pretium iaculis justo. In hac habitasse platea dictumst."
+        },
+        {
+          "username": "hvickors2o",
+          "review": "Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis. Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem. Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti."
+        },
+        {
+          "username": "kfahey2p",
+          "review": "Donec semper sapien a libero."
+        },
+        {
+          "username": "broyse2q",
+          "review": "Praesent blandit."
+        }
+      ]
+    }
+  },
+  {
+    "restaurant": {
+      "name": "Tim Hortons",
+      "location": "768 Hoosier Way",
+      "state": "AB",
+      "zipCode": 43532,
+      "phoneNumber": "459-434-3242",
+      "ratings": [
+        4.5,
+        6.7,
+        8.9,
+        7.6,
+        5.6,
+        9.4
+      ],
+      "reviews": [
+        {
+          "username": "bsabatier0",
+          "review": "Suspendisse potenti. Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris. Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis. Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem."
+        },
+        {
+          "username": "jsore1",
+          "review": "Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis. Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor."
+        },
+        {
+          "username": "ocossey2",
+          "review": "Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus."
+        },
+        {
+          "username": "msutherington3",
+          "review": "Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa."
+        },
+        {
+          "username": "afarbrace4",
+          "review": "Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus."
+        },
+        {
+          "username": "dmockford5",
+          "review": "In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat. Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem. Integer tincidunt ante vel ipsum."
+        },
+        {
+          "username": "psaldler6",
+          "review": "Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum. In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo. Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros."
+        }
+      ]
+    }
+  },
+  {
+    "restaurant": {
+      "name": "KFC",
+      "location": "432 Chicken Leg Street",
+      "state": "WA",
+      "zipCode": 3242,
+      "phoneNumber": "654-435-3252",
+      "ratings": [
+        7.8,
+        6.8,
+        7.8,
+        9.6,
+        5.7,
+        8.9
+      ],
+      "reviews": [
+        {
+          "username": "jpovey0",
+          "review": "Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat. Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem."
+        },
+        {
+          "username": "ayarwood1",
+          "review": "Integer a nibh. In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet. Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui. Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc."
+        },
+        {
+          "username": "amuncie2",
+          "review": "In congue. Etiam justo. Etiam pretium iaculis justo. In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus."
+        },
+        {
+          "username": "aashburner3",
+          "review": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat. In congue. Etiam justo. Etiam pretium iaculis justo. In hac habitasse platea dictumst. Etiam faucibus cursus urna."
+        },
+        {
+          "username": "fbrennen4",
+          "review": "Etiam faucibus cursus urna. Ut tellus."
+        },
+        {
+          "username": "ttheyer5",
+          "review": "Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis. Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem. Sed sagittis."
+        }
+      ]
+    }
+  },
+  {
+    "restaurant": {
+      "name": "Checkers",
+      "location": "676 Very Long Road",
+      "state": "FL",
+      "zipCode": 23424,
+      "phoneNumber": "454-674-4534",
+      "ratings": [
+        6.7,
+        9.7,
+        6.5,
+        9.7,
+        5.6,
+        8.8
+      ],
+      "reviews": [
+        {
+          "username": "bbattyll12",
+          "review": "Duis bibendum."
+        },
+        {
+          "username": "fcollopy13",
+          "review": "Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo. Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis."
+        },
+        {
+          "username": "rduchart14",
+          "review": "Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero."
+        },
+        {
+          "username": "tkristof15",
+          "review": "Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla."
+        },
+        {
+          "username": "jgiveen16",
+          "review": "Maecenas pulvinar lobortis est. Phasellus sit amet erat. Nulla tempus."
+        },
+        {
+          "username": "lseeborne17",
+          "review": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh."
+        },
+        {
+          "username": "llyburn18",
+          "review": "Proin leo odio, porttitor id, consequat in, consequat ut, nulla."
+        },
+        {
+          "username": "hcatmull19",
+          "review": "Integer tincidunt ante vel ipsum."
+        }
+      ]
+    }
+  },
+  {
+    "restaurant": {
+      "name": "Sonic",
+      "location": "6753 Tomato Paste Way",
+      "state": "MO",
+      "zipCode": 76464,
+      "phoneNumber": "980-456-4355",
+      "ratings": [
+        6.7,
+        8.9,
+        6.4,
+        9.9,
+        5.6,
+        8.9,
+        9
+      ],
+      "reviews": [
+        {
+          "username": "mfrandsenx",
+          "review": "Donec semper sapien a libero. Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius."
+        },
+        {
+          "username": "gstockdaley",
+          "review": "Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat."
+        },
+        {
+          "username": "zlabanz",
+          "review": "Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo."
+        },
+        {
+          "username": "gdaldan10",
+          "review": "Vivamus in felis eu sapien cursus vestibulum. Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit."
+        },
+        {
+          "username": "jlucas11",
+          "review": "Aenean lectus."
+        }
+      ]
+    }
+  },
+  {
+    "restaurant": {
+      "name": "Sonic",
+      "location": "6753 Tomato Paste Way",
+      "state": "MO",
+      "zipCode": 76464,
+      "phoneNumber": "980-456-4355",
+      "ratings": [
+        6.7,
+        8.9,
+        6.4,
+        9.9,
+        5.6,
+        8.9,
+        9
+      ],
+      "reviews": [
+        {
+          "username": "mfrandsenx",
+          "review": "Donec semper sapien a libero. Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius."
+        },
+        {
+          "username": "gstockdaley",
+          "review": "Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat."
+        },
+        {
+          "username": "zlabanz",
+          "review": "Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo."
+        },
+        {
+          "username": "gdaldan10",
+          "review": "Vivamus in felis eu sapien cursus vestibulum. Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit."
+        },
+        {
+          "username": "jlucas11",
+          "review": "Aenean lectus."
+        }
+      ]
+    }
+  }
+]

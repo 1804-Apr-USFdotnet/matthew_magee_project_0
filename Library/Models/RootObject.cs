@@ -4,12 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Data
+namespace Library.Models
 {
-    class Program
+    public class RootObject
     {
-        static void Main(string[] args)
-        {
-        }
+        
+        public Restaurant Restaurant { get; set; }
     }
 }
