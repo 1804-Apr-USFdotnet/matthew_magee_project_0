@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Library.Controllers;
 
 namespace Library.Helpers
@@ -17,11 +13,12 @@ namespace Library.Helpers
         public UI()
         {
             restaurantProgram = new RestaurantRepository();
+            input = "";
         }
 
         public void InitialStartup()
         {
-            input= "";
+            
             while (input != "quit")
             {
                 Console.WriteLine(
@@ -32,7 +29,7 @@ namespace Library.Helpers
                         "4. Search for restaurants\n" +
                         "5. Get details of a restaurant\n"+
                         "6. Display reviews of a restaurant\n"+
-                        "7. Display top 3 restaurants by rating"+
+                        "7. Display top 3 restaurants by rating\n"+
                         "Exit the program at any time by entering 'quit'"
 
                     );
@@ -51,13 +48,13 @@ namespace Library.Helpers
             switch (input.ToLower())
             {
                 case "1":
-                    restaurantProgram.GetAll();
+                    GetAllRestaurants();
                     break;
                 case "2":
-                    restaurantProgram.GetAllByRating();
+                    GetAllRating();
                     break;
                 case "3":
-                    restaurantProgram.GetAllByName();
+                    GetAllName();
                     break;
                 case "4":
                     SearchRestaurants();
@@ -69,7 +66,7 @@ namespace Library.Helpers
                     GetReviews();
                     break;
                 case "7":
-                    restaurantProgram.TopThreeRestaurants();
+                    GetTopThree();
                     break;
                 default:
                     Console.WriteLine("Sorry your input was not recognized.  Please try again.");
@@ -79,11 +76,41 @@ namespace Library.Helpers
             }
         }
 
+        public void GetAllRestaurants()
+        {
+            var result = restaurantProgram.GetAll();
+            foreach (var item in result)
+            {
+                Console.WriteLine(item.Restaurant.ToString());
+            }
+        }
+
+        public void GetAllRating()
+        {
+            var result = restaurantProgram.GetAllByRating();
+            foreach (var item in result)
+            {
+                Console.WriteLine(item.Restaurant.ToString());
+            }
+        }
+
+        public void GetAllName()
+        {
+            var result = restaurantProgram.GetAllByName();
+            foreach (var item in result)
+            {
+                Console.WriteLine(item.Restaurant.ToString());
+            }
+        }
         public void SearchRestaurants()
         {
             Console.WriteLine("Please enter the information you would like to search for.");
             searchString = Console.ReadLine().ToLower();
-            restaurantProgram.Search(searchString);
+            var result = restaurantProgram.Search(searchString);
+            foreach (var item in result)
+            {
+                Console.WriteLine(item.Restaurant.ToString());
+            }
 
         }
 
@@ -91,14 +118,24 @@ namespace Library.Helpers
         {
             Console.WriteLine("Please enter the restaurant you would like details on.");
             searchString = Console.ReadLine().ToLower();
-            restaurantProgram.Details(searchString);
+            var result = restaurantProgram.Details(searchString);
+            Console.WriteLine(result);
         }
 
         public void GetReviews()
         {
             Console.WriteLine("Please enter the restaurant you would like to see reviews");
             searchString = Console.ReadLine().ToLower();
-            restaurantProgram.Reviews(searchString);
+            var result = restaurantProgram.Reviews(searchString);
+            Console.WriteLine(result);
+            
+        }
+
+        public void GetTopThree()
+        {
+            var result = restaurantProgram.TopThreeRestaurants();
+            Console.WriteLine(result);
+            
         }
     }
 }
