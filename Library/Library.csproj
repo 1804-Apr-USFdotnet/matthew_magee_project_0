@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Controllers\RestaurantRepository.cs" />
     <Compile Include="Helpers\DataHelper.cs" />
+    <Compile Include="Helpers\UI.cs" />
     <Compile Include="Models\Restaurant.cs" />
     <Compile Include="Models\Review.cs" />
     <Compile Include="Models\RootObject.cs" />

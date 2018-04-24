@@ -10,6 +10,10 @@ namespace Library
     {
         IEnumerable<T> GetAll();
 
+        IEnumerable<T> GetAllByRating();
+
+        IEnumerable<T> GetAllByName();
+
         IEnumerable<T> Search(string searchString);
 
         string Details(string restaurant);

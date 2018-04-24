@@ -4,11 +4,12 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace RestaurantTest
 {
     [TestClass]
-    public class UnitTest1
+    public class RestaurantFunctionCheck
     {
         [TestMethod]
-        public void TestMethod1()
+        public void getAllRestaurants()
         {
+
         }
     }
 }
