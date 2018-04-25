@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Linq;
 using Library.Controllers;
+using NLog;
 
 namespace Library.Helpers
 {
@@ -9,6 +11,8 @@ namespace Library.Helpers
         public string searchString { get; set; }
 
         public RestaurantRepository restaurantProgram { get; set; }
+        
+        private static Logger logger = LogManager.GetCurrentClassLogger();
 
         public RestaurantController()
         {
@@ -40,7 +44,7 @@ namespace Library.Helpers
             }
 
             Console.WriteLine("Goodbye");
-            System.Environment.Exit(1);
+            Environment.Exit(1);
         }
 
         private void HandleInput()
@@ -79,10 +83,13 @@ namespace Library.Helpers
         public void GetAllRestaurants()
         {
             var result = restaurantProgram.GetAll();
-            foreach (var item in result)
-            {
-                Console.WriteLine(item.Restaurant.ToString());
-            }
+            
+                foreach (var item in result)
+                {
+                    Console.WriteLine(item.Restaurant.ToString());
+                }
+            
+            
         }
 
         public void GetAllRating()
@@ -102,15 +109,24 @@ namespace Library.Helpers
                 Console.WriteLine(item.Restaurant.ToString());
             }
         }
+
         public void SearchRestaurants()
         {
             Console.WriteLine("Please enter the information you would like to search for.");
             searchString = Console.ReadLine().ToLower();
             var result = restaurantProgram.Search(searchString);
-            foreach (var item in result)
-            {
-                Console.WriteLine(item.Restaurant.ToString());
+            if (!result.Any())
+            { 
+                logger.Warn("Unable to find a matching result.  Please try again.");
             }
+            else
+            {
+                foreach (var item in result)
+                {
+                    Console.WriteLine(item.Restaurant.ToString());
+                }
+            }
+            
 
         }
 
@@ -119,7 +135,15 @@ namespace Library.Helpers
             Console.WriteLine("Please enter the restaurant you would like details on.");
             searchString = Console.ReadLine().ToLower();
             var result = restaurantProgram.Details(searchString);
-            Console.WriteLine(result);
+            if (String.IsNullOrEmpty(result))
+            {
+                logger.Warn("No Results Found. Please Try Again.");
+            }
+            else
+            {
+                Console.WriteLine(result);
+            }
+            
         }
 
         public void GetReviews()
@@ -127,9 +151,17 @@ namespace Library.Helpers
             Console.WriteLine("Please enter the restaurant you would like to see reviews");
             searchString = Console.ReadLine().ToLower();
             var result = restaurantProgram.Reviews(searchString);
-            Console.WriteLine(result);
-            
-        }
+            if (String.IsNullOrEmpty(result))
+            {
+                
+                logger.Warn("Unable to find a matching result.  Please try again.");
+            }
+            else
+            {
+                Console.WriteLine(result);
+            }
+
+        }   
 
         public void GetTopThree()
         {

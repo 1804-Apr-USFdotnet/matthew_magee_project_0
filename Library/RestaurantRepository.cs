@@ -52,8 +52,15 @@ namespace Library.Controllers
                 .ToLower()
                 .Contains(restaurantName
                     .ToLower()));
-
-            return result.Restaurant.ToString();
+            if (result == null)
+            {
+                return "";
+            }
+            else
+            {
+                return result.Restaurant.ToString();
+            }
+            
         }
 
         public string Reviews(string restaurantName)
@@ -65,24 +72,38 @@ namespace Library.Controllers
                     .ToLower()));
 
             string reviewBuilder = "";
-            foreach (var i in result.Restaurant.reviews)
+            if (result == null)
             {
-                reviewBuilder += "Username: " + i.username + " Review: " + i.review + "\n";
+                return "";
             }
+            else
+            {
+                foreach (var i in result.Restaurant.reviews)
+                {
+                    reviewBuilder += "Username: " + i.username + " Review: " + i.review + "\n";
+                }
 
-            return reviewBuilder;
+                return reviewBuilder;
+            }
         }
 
         public string TopThreeRestaurants()
         {
             var query = myArray.OrderByDescending(rest => rest.Restaurant.averageRating()).Take(3);
             string restaurantBuilder = "";
-            foreach (var item in query)
+            if (query == null)
             {
-                restaurantBuilder += item.Restaurant.ToString() + "\n";
+                return "";
             }
+            else
+            {
+                foreach (var item in query)
+                {
+                    restaurantBuilder += item.Restaurant.ToString() + "\n";
+                }
 
-            return restaurantBuilder;
+                return restaurantBuilder;
+            }
         }
 
 

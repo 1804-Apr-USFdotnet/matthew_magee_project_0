@@ -1,13 +1,16 @@
 ﻿using Library.Helpers;
+using NLog;
 
 namespace RestaurantProject0
 {
     class Program
     {
+        private static Logger logger = LogManager.GetCurrentClassLogger();
+
         static void Main(string[] args)
         {
-
-            RestaurantController user = new RestaurantController();
+            logger.Warn("Warning");
+            var user = new RestaurantController();
             user.InitialStartup();
         }
     }

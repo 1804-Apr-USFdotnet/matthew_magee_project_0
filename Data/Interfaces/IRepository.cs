@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Library
 {
@@ -16,7 +12,7 @@ namespace Library
 
         IEnumerable<T> Search(string searchString);
 
-        string Details(string restaurant);
+        string Details (string restaurant);
 
         string Reviews(string restaurant);
 
