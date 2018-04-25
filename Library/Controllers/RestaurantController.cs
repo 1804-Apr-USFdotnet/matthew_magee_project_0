@@ -3,14 +3,14 @@ using Library.Controllers;
 
 namespace Library.Helpers
 {
-    public class UI
+    public class RestaurantController
     {
         public string input { get; set; }
         public string searchString { get; set; }
 
         public RestaurantRepository restaurantProgram { get; set; }
 
-        public UI()
+        public RestaurantController()
         {
             restaurantProgram = new RestaurantRepository();
             input = "";

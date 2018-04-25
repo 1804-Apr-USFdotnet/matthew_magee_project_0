@@ -7,7 +7,7 @@ namespace RestaurantProject0
         static void Main(string[] args)
         {
 
-            UI user = new UI();
+            RestaurantController user = new RestaurantController();
             user.InitialStartup();
         }
     }
