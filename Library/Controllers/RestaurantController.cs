@@ -73,7 +73,7 @@ namespace Library.Helpers
                     GetTopThree();
                     break;
                 default:
-                    Console.WriteLine("Sorry your input was not recognized.  Please try again.");
+                    logger.Warn("Sorry your input was not recognized.  Please try again.");
                     InitialStartup();
                     break;
 
@@ -117,7 +117,7 @@ namespace Library.Helpers
             var result = restaurantProgram.Search(searchString);
             if (!result.Any())
             { 
-                logger.Warn("Unable to find a matching result.  Please try again.");
+                logger.Warn("Unable to find any Restaurants matching that search.  Please try again.");
             }
             else
             {
@@ -137,7 +137,7 @@ namespace Library.Helpers
             var result = restaurantProgram.Details(searchString);
             if (String.IsNullOrEmpty(result))
             {
-                logger.Warn("No Results Found. Please Try Again.");
+                logger.Warn("Unable to find those restaurant details.  Please try again.");
             }
             else
             {
@@ -154,7 +154,7 @@ namespace Library.Helpers
             if (String.IsNullOrEmpty(result))
             {
                 
-                logger.Warn("Unable to find a matching result.  Please try again.");
+                logger.Warn("Unable to find that restaurant.  Please try again.");
             }
             else
             {

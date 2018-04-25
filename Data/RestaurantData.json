@@ -357,17 +357,17 @@
   },
   {
     "restaurant": {
-      "name": "Sonic",
-      "location": "6753 Tomato Paste Way",
-      "state": "MO",
+      "name": "TGI Fridays",
+      "location": "4243 Patriots Way",
+      "state": "MA",
       "zipCode": 76464,
       "phoneNumber": "980-456-4355",
       "ratings": [
-        6.7,
+        8.2,
         8.9,
-        6.4,
+        8.4,
         9.9,
-        5.6,
+        8.6,
         8.9,
         9
       ],

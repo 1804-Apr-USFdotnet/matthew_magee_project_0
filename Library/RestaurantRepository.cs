@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.IO;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
 using Library.Helpers;
 using Library.Models;
-using Newtonsoft.Json;
 
 namespace Library.Controllers
 {
@@ -32,7 +27,7 @@ namespace Library.Controllers
 
         public IEnumerable<RootObject> GetAllByName()
         {
-            return myArray.OrderByDescending(rest => rest.Restaurant.name);
+            return myArray.OrderBy(rest => rest.Restaurant.name);
         }
 
         public IEnumerable<RootObject> Search(string searchString)
@@ -56,10 +51,8 @@ namespace Library.Controllers
             {
                 return "";
             }
-            else
-            {
                 return result.Restaurant.ToString();
-            }
+            
             
         }
 
@@ -76,37 +69,27 @@ namespace Library.Controllers
             {
                 return "";
             }
-            else
-            {
-                foreach (var i in result.Restaurant.reviews)
+             foreach (var i in result.Restaurant.reviews)
                 {
                     reviewBuilder += "Username: " + i.username + " Review: " + i.review + "\n";
                 }
 
                 return reviewBuilder;
-            }
         }
 
         public string TopThreeRestaurants()
         {
             var query = myArray.OrderByDescending(rest => rest.Restaurant.averageRating()).Take(3);
             string restaurantBuilder = "";
-            if (query == null)
-            {
-                return "";
-            }
-            else
-            {
+            
                 foreach (var item in query)
                 {
-                    restaurantBuilder += item.Restaurant.ToString() + "\n";
+                    restaurantBuilder += item.Restaurant+ "\n";
                 }
 
                 return restaurantBuilder;
-            }
+            
         }
-
-
-        
+ 
     }
 }

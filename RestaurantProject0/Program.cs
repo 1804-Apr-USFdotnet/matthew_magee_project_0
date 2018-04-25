@@ -9,7 +9,6 @@ namespace RestaurantProject0
 
         static void Main(string[] args)
         {
-            logger.Warn("Warning");
             var user = new RestaurantController();
             user.InitialStartup();
         }
