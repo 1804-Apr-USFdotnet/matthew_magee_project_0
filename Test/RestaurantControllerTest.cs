@@ -1,31 +1,30 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using Data.Models;
+using Library.Interfaces;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
-using Library.Models;
-using Library;
 
-namespace RestaurantTest
+namespace Test
 {
     [TestClass]
     public class RestaurantControllerTest
     {
-        Mock<IRepository<RootObject>> mockRepository = new Mock<IRepository<RootObject>>();
-        private List<RootObject> listOfRestaurants = new List<RootObject>
+        Mock<IRepository<Restaurants>> mockRepository = new Mock<IRepository<Restaurants>>();
+
+        private List<Restaurants> listOfRestaurants = new List<Restaurants>
         {
-            new RootObject()
+            new Restaurants()
             {
-                Restaurant = new Restaurant()
-                {
-                    name = "McDonalds",
-                    location = "123 Main street",
-                    phoneNumber = "765-334-3434",
-                    ratings = new List<double>() {5.4, 4.5, 9.8, 5.6},
-                    reviews = new List<Review>() {new Review() {review = "It sucked", username = "myUsername"}},
-                    state = "AK",
-                    zipCode = 74654
-                }
+
+                Id = 1,
+                Name = "McDonalds",
+                Address = "123 Main street",
+                ZipCode = 43532,
+                PhoneNumber = "453-432-2452"
             }
         };
+    
 
         [TestMethod]
         public void getAllRestaurants()
@@ -37,7 +36,7 @@ namespace RestaurantTest
         [TestMethod]
         public void getAllByRating()
         {
-            mockRepository.Setup(x => x.GetAllByRating()).Returns(listOfRestaurants);
+            mockRepository.Setup(x => x.GetAllByRating()).Returns(listOfRestaurants.ToString);
             mockRepository.Object.GetAllByRating();
         }
 
@@ -47,14 +46,7 @@ namespace RestaurantTest
             mockRepository.Setup(x => x.GetAllByName()).Returns(listOfRestaurants);
             mockRepository.Object.GetAllByName();
         }
-
-        [TestMethod]
-        public void Search()
-        {
-            string searchString = "McDonalds";
-            mockRepository.Setup(x => x.Search(searchString)).Returns(listOfRestaurants);
-            mockRepository.Object.Search(searchString);
-        }
+        
 
         [TestMethod]
         public void Details()

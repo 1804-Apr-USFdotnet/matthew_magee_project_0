@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Library.Controllers
+namespace Library
 {
-    class RestaurantController
+    public class Class1
     {
     }
 }
